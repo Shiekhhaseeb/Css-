@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+background-color: beige;
+border: 2px solid black;
+display: flex;
+width: 450px;
+padding: 2px;
+margin: 10px;
+}
+
+#boxleft{
+background-color: aqua;
+  border: 1px solid blue;  
+  width: 47%;
+  margin: 3px;
+  padding: 2px;
+display: flex;
+flex-direction: column;/*ek ke nechay ek*/
+}
+
+#boxright{
+background-color: yellow;
+border: 1px solid brown;
+width: 47%;
+margin: 3px;
+padding: 2px;
+
+
+}
+p{
+  border: 1px solid red;  
+}
+img{
+    height: 170px;
+    width: 200px;
+}
+
+@media only screen and  (max-width:640px){/*only screen = if we wanna display it on only screen*/
+    .container{
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="boxleft">Box1
+<p>Text1</p>
+<p>Text2</p>
+    </div>
+    <div class="box" id="boxright">
+    <img src="Man.jpg">    
+    </div>
+  
+  </div>
+</body>
+</html>
