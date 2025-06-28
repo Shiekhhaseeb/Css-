@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+               --primary-color:brown;/*Custom variabel in CSS*/
+            --custom-width:330px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .box{
+           
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;/*along vertical axis*/
+             /* box-shadow: -10px 150px 20px var(--primary-color);x and y-axis */
+
+            /*Box-shadow using buller radius*/
+            /* box-shadow: 10px 15px 50px brown;
+            3rd is buller radius ,Increse it more light it becomes */
+            /* box-shadow: 10px 5px 5px 40px brown;4th one is spread radius */
+            
+            /*Using rgb color:-->*/
+             /* box-shadow: 10px 5px 5px 40px rgba(165, 42, 42, 0.732); */
+
+             /*andar ki taraf shadow*/
+/* box-shadow: inset 10px 15px brown; */
+/*Add multiple shadows:-->*/
+/* box-shadow: 10px 15px red,15px 8px green; */
+        }
+        .box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#head1{
+    text-shadow: 2px 3px 2px white ;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img src="Free code camp.svg">
+        <h2 id="head1">Welcome to CoceHelp</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corporis dolorum, veritatis incidunt itaque a nam voluptate recusandae vero, fugit, quasi dolorem. Repellat harum vero vitae, exercitationem hic temporibus adipisci?</p>
+    </div>
+
+
+    </div>
+</body>
+</html>
